@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:car="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+CARS:
+<div>
+    <th:block th:each="car : ${car}">
+        <h1 th:text="${'Car: '+car.getModel()+', ' +'Series: '+ car.getSeries()+', ' +'Color: '+car.getColor()}"></h1>
+    </th:block>
+</div>
+</body>
+</html>
